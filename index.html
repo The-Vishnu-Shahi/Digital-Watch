@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Watch</title>
+</head>
+<body>
+    <center>
+        <h1>Digital Watch</h1> <br>
+        <span>Show Time :-</span>
+        <span id="h">10 :</span>
+        <span id="m">30 :</span>
+        <span id="s">50</span>
+    </center>
+</body>
+
+<script>
+
+    let h = document.getElementById("h");
+    let m = document.getElementById("m");
+    let s = document.getElementById("s");
+    
+  
+
+   setInterval(()=>{
+    let date = new Date();
+   h.textContent = date.getHours()+" :";
+   m.textContent =  date.getMinutes()+" :";
+   s.textContent = date.getSeconds();
+   } , 1000)
+
+
+</script>
+</html>
